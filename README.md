@@ -10,11 +10,11 @@ The purpos of this project was to be an introduction to node.js. The learning go
 - create a seed file
 ```
 Arcade uses a Sequelize "promise based" ORM. The Sequelize docs can be found here:
-![sequelize](https://sequelize.org/)
+[sequelize](https://sequelize.org/)
 
 ### Installation Steps Taken:
 
-1. Go to ![node.js](https://nodejs.org/en/) and install the "Recommended for Most Users" version of node.
+1. Go to [node.js](https://nodejs.org/en/) and install the "Recommended for Most Users" version of node.
 2. In the command line, type: ```npm install express-generator -g```.
 This allows us to create the start to an Express App, similar to 'rails create'.
 3. In the command line, type: ```express --no-view arcade```. The ```--no-view``` is an option that is used so that there isn’t a views folder within our app.
@@ -31,7 +31,7 @@ This allows us to create the start to an Express App, similar to 'rails create'.
 11. Migrate the database by running ```npx sequelize db:migrate```
     - In the event a migration needed to be undone, run ```npx sequelize db:migrate:undo```
 12. Generate seeds by running ```npx sequelize seed:generate --name game_seed```
-13. Create data for seedfile by checking out the sequelize docs ![Here](https://sequelize.org/)
+13. Create data for seedfile by checking out the sequelize docs [Here](https://sequelize.org/)
 14. Seed the data by running ```npx sequelize db:seed:all```
 15. Create Routes with api/v1/model_name.js, such as ```routes/api/v1/games.js```
   - Put the following routes back into your app.js file: ```var gamesRouter = require('./routes/api/v1/games');``` and ```app.use('/api/v1/games', gamesRouter);```
