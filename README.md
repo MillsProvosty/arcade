@@ -25,7 +25,7 @@ This allows us to create the start to an Express App, similar to 'rails create'.
     - Username is the name of your database, found by typing in ```psql``` the ```\q```.
     - The database needs to match the project name, in this case ```arcade_```environment name.
     - The dialect needs to be changed to "postgres" instead of "mysql"
-8. Add a .gitignore file, and include node_modules before "initial commit"
+8. Add a ```.gitignore``` file, and include ```node_modules``` before "initial commit"
 9. Create the database by running ```npx sequelize db:create```
 10. Generate the model by running ```npx sequelize model:generate --name Game --attributes title:string,price:integer,releaseYear:integer,active:boolean```
 11. Migrate the database by running ```npx sequelize db:migrate```
